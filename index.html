@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tempovore</title>
+  <title>Tempovore | Rhythm in Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Tempovore</h1>
-    <nav>
+  <div class="bg-orbs" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="site-header">
+    <h1 class="logo">TEMPOVORE</h1>
+    <nav class="site-nav">
       <a href="#about">About</a>
       <a href="#music">Music</a>
       <a href="#shows">Shows</a>
@@ -17,33 +26,57 @@
     </nav>
   </header>
 
-  <section id="hero">
-    <h2>Sound. Energy. Tempovore.</h2>
-    <p>New music coming soon.</p>
-  </section>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">A New Signal Emerges</p>
+        <h2>Flash-forward sound with a pulse you can see.</h2>
+        <p>
+          Tempovore fuses cinematic atmosphere, industrial bite, and dance-floor momentum into an immersive sonic universe.
+        </p>
+        <div class="hero-cta">
+          <a href="#music" class="btn primary">Listen</a>
+          <a href="#shows" class="btn secondary">See Live Dates</a>
+        </div>
+      </div>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Tempovore is a band blending rhythm and atmosphere into a unique sonic experience.</p>
-  </section>
+      <figure class="hero-art reveal" id="focal">
+        <img
+          src="https://pub-d19e7dbfe91f43cf8b5602b495c5de08.r2.dev/tempovore.png"
+          alt="Tempovore visual artwork"
+        >
+      </figure>
+    </section>
 
-  <section id="music">
-    <h2>Music</h2>
-    <p>Embed your Spotify, SoundCloud, or Bandcamp here.</p>
-  </section>
+    <section id="about" class="glass-card reveal">
+      <h3>About Tempovore</h3>
+      <p>
+        Tempovore crafts high-contrast sets: deep bass architecture, fractured synth textures, and cathartic crescendos tuned for night drives and live stages.
+      </p>
+    </section>
 
-  <section id="shows">
-    <h2>Shows</h2>
-    <p>Upcoming shows will be listed here.</p>
-  </section>
+    <section id="music" class="glass-card reveal">
+      <h3>Music</h3>
+      <p>Streaming links, premieres, and visualizers are landing soon. Stay locked in.</p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </section>
+    <section id="shows" class="glass-card reveal">
+      <h3>Shows</h3>
+      <p>Tour announcements and event drops will appear here first.</p>
+    </section>
 
-  <footer>
-    <p>© 2026 Tempovore</p>
+    <section id="contact" class="glass-card reveal">
+      <h3>Contact</h3>
+      <p>
+        Booking + press: <a href="mailto:hello@tempovore.falconsystems.ai">hello@tempovore.falconsystems.ai</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Tempovore · All frequencies reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
