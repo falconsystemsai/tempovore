@@ -115,6 +115,32 @@ body::before {
   line-height: 1.35;
 }
 
+.upcoming-events {
+  margin-top: 1.35rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--line);
+}
+
+.events-label {
+  margin: 0;
+  color: var(--text-muted);
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+.event-name {
+  margin: 0.4rem 0 0;
+  font-size: 1.4rem;
+}
+
+.event-details,
+.event-location {
+  margin: 0.2rem 0 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(22px);
