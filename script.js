@@ -15,19 +15,15 @@ const observer = new IntersectionObserver(
 revealItems.forEach((item) => observer.observe(item));
 
 window.addEventListener('mousemove', (event) => {
-  if (!focalImage) {
-    return;
-  }
+  if (!focalImage) return;
 
-  const x = (event.clientX / window.innerWidth - 0.5) * 12;
-  const y = (event.clientY / window.innerHeight - 0.5) * 12;
-  focalImage.style.transform = `rotateY(${x}deg) rotateX(${-y}deg) scale(1.02)`;
+  const x = (event.clientX / window.innerWidth - 0.5) * 8;
+  const y = (event.clientY / window.innerHeight - 0.5) * 8;
+  focalImage.style.transform = `rotateY(${x}deg) rotateX(${-y}deg) scale(1.015)`;
 });
 
 window.addEventListener('mouseleave', () => {
-  if (!focalImage) {
-    return;
-  }
+  if (!focalImage) return;
 
   focalImage.style.transform = 'rotateY(0deg) rotateX(0deg) scale(1)';
 });
