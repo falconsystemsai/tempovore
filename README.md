@@ -13,3 +13,16 @@ Simple starter site for the band Tempovore.
 - Add tour dates
 - Connect a CMS
 - Deploy via GitHub Pages
+
+## Cloudflare Workers Deploy
+
+This repository is configured for Workers static assets deploys:
+
+- `wrangler.jsonc` points `main` at `worker.js`
+- `worker.js` serves static files from the `assets.directory` binding
+
+Deploy with:
+
+```bash
+npx wrangler deploy
+```
